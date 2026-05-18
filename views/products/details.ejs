@@ -1,0 +1,28 @@
+<h1><%= product.name %></h1>
+
+<img src="<%= product.imageUrl %>"
+width="300"
+class="mb-3">
+
+<p>
+<%= product.description %>
+</p>
+
+<p>
+Prix :
+<%= product.price %> €
+</p>
+
+<p>
+Catégorie :
+<%= product.category %>
+</p>
+
+<p>
+Quantité :
+<%= product.quantity %>
+</p>
+
+<a href="/products" class="btn btn-secondary">
+Retour
+</a>

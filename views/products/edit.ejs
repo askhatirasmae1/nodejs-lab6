@@ -1,0 +1,38 @@
+<h1>Modifier Produit</h1>
+
+<form action="/products/<%= product._id %>/update" method="POST">
+
+<input type="text"
+name="name"
+value="<%= product.name %>"
+class="form-control mb-3">
+
+<input type="number"
+name="price"
+value="<%= product.price %>"
+class="form-control mb-3">
+
+<input type="text"
+name="category"
+value="<%= product.category %>"
+class="form-control mb-3">
+
+<input type="number"
+name="quantity"
+value="<%= product.quantity %>"
+class="form-control mb-3">
+
+<input type="text"
+name="imageUrl"
+value="<%= product.imageUrl %>"
+class="form-control mb-3">
+
+<textarea
+name="description"
+class="form-control mb-3"><%= product.description %></textarea>
+
+<button class="btn btn-primary">
+Modifier
+</button>
+
+</form>

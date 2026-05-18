@@ -1,0 +1,55 @@
+<h1 class="mb-4">Liste des produits</h1>
+
+<a href="/products/create" class="btn btn-primary mb-4">
+Ajouter Produit
+</a>
+
+<div class="row">
+
+<% products.forEach(product => { %>
+
+<div class="col-md-4">
+
+<div class="card mb-4">
+
+<img src="<%= product.imageUrl %>" class="card-img-top" style="height:200px; object-fit:cover;">
+
+<div class="card-body">
+
+<h5 class="card-title">
+<%= product.name %>
+</h5>
+
+<p>
+<%= product.price %> €
+</p>
+
+<p>
+<%= product.category %>
+</p>
+
+<a href="/products/<%= product._id %>" class="btn btn-info">
+Voir
+</a>
+
+<a href="/products/edit/<%= product._id %>" class="btn btn-warning">
+Modifier
+</a>
+
+<form action="/products/<%= product._id %>/delete" method="POST">
+
+<button class="btn btn-danger mt-2">
+Supprimer
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<% }) %>
+
+</div>

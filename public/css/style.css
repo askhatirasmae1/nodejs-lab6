@@ -1,0 +1,17 @@
+body{
+    background:#f4f4f4;
+}
+
+.card{
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    border:none;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+img{
+    border-radius:5px;
+}

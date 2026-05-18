@@ -1,0 +1,1 @@
+/* vide pour ce lab simple */
